@@ -23,7 +23,6 @@ const $ = new Env("坐等更新");
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 const notify = $.isNode() ? require('./sendNotify') : '';
 const cp = $.isNode() ? require('child_process') : '';
-export ADOLF_ADDSKU="true"//执行加购任务
 let cookiesArr = [], cookie = '', message = '';
 const Adolf_addsku = $.isNode() ? process.env.ADOLF_ADDSKU || '' : '';
 const shareCode = [];
